@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Audible Tab Identifier",
+    "name": "Tab Muter",
     "version": "0.0.1",
-    "description": "An extension that identifies tabs that are making sound and gives you the option to mute/unmute those/the tab(s) of interest.",
+    "description": "A simple muting Chrome Extension that mutes all mutable tabs.",
     "icons": {
         "16": "images/icon-16.png",
         "32": "images/icon-32.png",
@@ -12,14 +12,6 @@
     "action": {
         "default_popup": "popup/popup.html"
     },
-    "content_scripts": [
-        {
-          "js": ["scripts/content.js"],
-          "matches": [
-            "https://*/*"
-          ]
-        }
-    ],
     "background": {
         "service_worker": "scripts/background.js"
     },
