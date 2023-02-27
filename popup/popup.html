@@ -1,46 +1,29 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./popup/popup.css" />
-  </head>
-  <div class="popup-container">
-    <label class="switch">
-      <input type="checkbox">
-      <span class="slider"></span>
-    </label>
-  </div>
-    <script type="text/javascript" src="popup/popup.js"></script>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./popup.css" />
-</head>
-<body>
-<div class="popup-container">
-  <div class="popup-wrapper">
-    <div class="title-wrapper">
-      <h2>Audible Tab Identifier</h2>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+
+  <body>
+    <div class="popup-container">
+      <div class="popup-wrapper">
+        <div class="title-wrapper">
+          <h2>Audible Tab Identifier</h2>
+        </div>
+        <div class="content-wrapper">
+          <div class="text-wrapper" id="text-wrapper">
+            <h3>Mute</h3>
+          </div>
+          <div class="switch-wrapper">
+            <label class="switch">
+              <input type="checkbox" id="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="content-wrapper">
-      <div class="text-wrapper" id="text-wrapper">
-        <h3>Mute</h2>
-      </div>
-      <div class="switch-wrapper">
-        <label class="switch">
-          <input type="checkbox" id="checkbox">
-          <span class="slider round"></span>
-        </label>
-      </div>
-  </div>
-  </div>
-</div>
-<script src="/popup/popup.js" type="module"></script>
-</body>
-</html> 
+    <script src="/popup/popup.js" type="module"></script>
+  </body>
+</html>
